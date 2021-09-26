@@ -17,7 +17,7 @@ public class EmailService {
 
 	public boolean sendEmail(String to, String subject, String message) {
 		boolean status = false;
-		String from = "devimpala9@gmail.com";
+		String from = "<your email id>";
 
 //		Gmail variable
 		String host = "smtp.gmail.com";
@@ -37,7 +37,7 @@ public class EmailService {
 
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("devimpala9@gmail.com", "8050195884");
+				return new PasswordAuthentication("<your email id>", "<passsword>");
 			}
 
 		});
